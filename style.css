@@ -512,7 +512,7 @@ a:focus {
 }
 .visit a,
 .visit a:after {
-  color: #cccccc;
+  color: #989898;
   text-decoration: none;
   height: 18px;
   overflow: hidden;
@@ -573,6 +573,19 @@ a {
   z-index: 29;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
+  max-height: 100px;
+}
+
+.detail img {
+  animation: arrowLoop 3s infinite ease-in-out;
+}
+
+@keyframes arrowLoop {
+  0% {transform: translateY(-200%)}
+  10% {transform: translateY(0%)}
+  90% {transform: translateY(0%)}
+  100% {transform: translateY(200%)}
 }
 
 .fourth-project .visit a:after {
@@ -712,7 +725,7 @@ input[type=radio]:checked + label + * {
 }
 
 .intro input ~ .text-container {
-	padding-top: 150px;
+	/*padding-top: 150px;*/
 	transition: all 0.7s cubic-bezier(0.76, 0, 0.29, 1);
 }
 .intro input ~ .text-container h2 {
@@ -964,7 +977,7 @@ section h2 {
   transition: 0.4s top ease-in-out;
   width: 100vw;
   position: absolute;
-  max-width: 800px;
+  max-width: 90vw;
   -webkit-transform: translate3d(0,0,0);
   transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateZ(200px);
   perspective-origin: bottom;
@@ -1052,10 +1065,10 @@ section h2 {
   }
 
   .first-project img:nth-child(2) {
-    transform: rotateZ(16deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
   }
   .first-project img:nth-child(3) {
-    transform: rotateZ(5deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
+    transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
   }
 
 
@@ -1156,7 +1169,8 @@ right: 22%;
 .second-project img {
     transition: top 0.8s ease;
     width: 90vw;
-    max-width: 800px;
+    /*max-width: 800px;*/
+    max-width: 90vw;
     position: absolute;
     left: 10%;
     z-index: 99;
@@ -1167,14 +1181,21 @@ right: 22%;
     transform-style: preserve-3d;
     transform: rotateZ(9deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px);
 }
+
+.second-project > input {
+  position: absolute;
+  left: -9999px;
+}
 @media screen and (max-width: 600px) {
   .second-project img {
     transition: all 0.8s ease;
     animation: pulsatingShadowYellow 2s infinite;
     z-index: 0;
   }
-  .second-project img:hover,
-  .second-project img:focus {
+.second-project > input:checked ~ .image-transform img
+  /*.second-project img:hover,
+  .second-project img:focus */
+  {
     z-index: 99;
     animation: none;
     width: 120vw;
@@ -1200,12 +1221,14 @@ right: 22%;
     transition: all 3s ease-in-out;
     transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px) translateY(0vh);
   }
+  
+    
+  .second-project > input:checked ~ .image-transform img,
   .second-project img:hover {
     /*animation: animateSecondImage 3s 1;*/
     transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px) translateY(-50vh); 
     animation-fill-mode: forwards;
     animation-delay: 0s;
-
   }
 }
   
@@ -1357,6 +1380,7 @@ transform-style: preserve-3d;
     left: 30%;
     width: 150px;
   }
+  .fourth-project > input:checked ~ label.phone-shell,
   .fourth-project .phone-shell:hover,
   .fourth-project .phone-shell:focus {
     width: 230px;
@@ -1368,6 +1392,7 @@ transform-style: preserve-3d;
   .fourth-project .text-container {
     width: 90%;
   }
+  .fourth-project > input:checked ~ label.phone-shell,
   .fourth-project .phone-shell:hover,
   .fourth-project .phone-shell:focus {
     width: 42vh;
@@ -1409,6 +1434,12 @@ transform-style: preserve-3d;
 	position: absolute;
   filter: blur(0.75px);
   height: 100px;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.layer {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 .layer.layer-01 img {
     position: absolute;
@@ -1491,16 +1522,25 @@ transform-style: preserve-3d;
 .fourth-project .phone-shell {
   transform-origin: center center;
   transition: all 0.3s ease-in-out;
+  display: block;
 }
 
 
+.fourth-project input {
+  position: absolute;
+  left: -9999px;
+}
 
+
+.fourth-project > input:checked ~ .section-container,
+.fourth-project > input:checked ~ .parallax-items,
 .fourth-project .phone-shell:hover ~ .section-container,
 .fourth-project .phone-shell:hover ~ .parallax-items {
 	filter: blur(5px);
 }
 
-.fourth-project .phone-shell:hover img {
+.fourth-project .phone-shell:hover img,
+.fourth-project > input:checked ~ label.phone-shell img {
   transition-delay: 0.8s;
 	top: -162%;
   transition-duration: 2s;
