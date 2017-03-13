@@ -497,6 +497,12 @@ template {
 .second-project .section-cta {
 	color: #fbce20;
 }
+@media screen and (max-width: 600px) {
+  p.section-cta {
+    margin-top: 0.5em;  
+    margin-bottom: 0.5em;  
+  }
+}
 
 
 a:hover,
@@ -977,7 +983,7 @@ section h2 {
   transition: 0.4s top ease-in-out;
   width: 100vw;
   position: absolute;
-  max-width: 90vw;
+  
   -webkit-transform: translate3d(0,0,0);
   transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateZ(200px);
   perspective-origin: bottom;
@@ -1056,6 +1062,7 @@ section h2 {
     margin-bottom: 150px;
   }
   .first-project img {
+    max-width: 90vw;
     transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translateZ(200px);
     top: -1vh;
     right: calc(50% + 90px);
@@ -1170,7 +1177,6 @@ right: 22%;
     transition: top 0.8s ease;
     width: 90vw;
     /*max-width: 800px;*/
-    max-width: 90vw;
     position: absolute;
     left: 10%;
     z-index: 99;
@@ -1200,7 +1206,7 @@ right: 22%;
     animation: none;
     width: 120vw;
     left: -2%;
-    top: 20%;
+    top: 40%;
     transform: rotateZ(4deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px);
   }
 }
@@ -1214,8 +1220,9 @@ right: 22%;
 
 @media screen and (min-width: 601px) {
   .second-project img {
+    max-width: 90vw;
     top: 50px;
-    width: 70vw;
+    width: 90vw;
     left: calc(50% - 5px);
     /*left: auto;*/
     transition: all 3s ease-in-out;
@@ -1229,6 +1236,12 @@ right: 22%;
     transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px) translateY(-50vh); 
     animation-fill-mode: forwards;
     animation-delay: 0s;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .second-project img {
+    width: 70vw;
   }
 }
   
