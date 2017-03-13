@@ -533,7 +533,7 @@ a:focus {
 }
 .visit a:after,
 .visit span {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .visit a:after {
   content: attr(data-title);
@@ -552,7 +552,7 @@ a:focus {
 
 .visit a:hover:after,
 .visit a:hover span {
-  transition-duration: 0.15s;
+  transition-duration: 0.2s;
 }
 
 
