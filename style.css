@@ -611,11 +611,13 @@ a {
   left: 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .second-project .arrow-right:after {
   transform: rotate(-45deg);
   top: 13px;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 
@@ -650,10 +652,12 @@ a {
   left: 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .fourth-project .arrow-left:after {
   transform: rotate(45deg);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 
@@ -872,6 +876,7 @@ section h2 {
   background: #e8e8e8;
   left: -20px;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .dark-gray-shard {
@@ -885,6 +890,7 @@ section h2 {
   left: -20px;
   z-index: -1;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .intro {
@@ -965,6 +971,7 @@ section h2 {
   transform-style: preserve-3d;
   padding-top: 0%;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
   
@@ -991,6 +998,7 @@ section h2 {
   transform-style: preserve-3d;
   animation-delay: 1500s;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -1002,17 +1010,20 @@ section h2 {
     transform: rotateZ(11deg) rotateX(0deg) rotateY(0deg) translateZ(210px);
     top: 64%;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project img:nth-child(2) {
     transform: rotateZ(6deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
     top: 65%;
     animation: pulsatingShadowBlack 2s infinite;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project img:nth-child(3) {
     transform: rotateZ(-2deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
     top: 66%;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project:hover img,
   .first-project:focus img {
@@ -1023,6 +1034,7 @@ section h2 {
     top: 20%;
     box-shadow: -7px -5px 20px 0px rgba(0,0,0,0.09);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project:hover img:nth-child(2),
   .first-project:focus img:nth-child(2) {
@@ -1030,6 +1042,7 @@ section h2 {
     right: -29%;
     top: 9%;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project:hover img:nth-child(3),
   .first-project:focus img:nth-child(3) {
@@ -1037,6 +1050,7 @@ section h2 {
     right: -16%;
     top: 18%;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
 }
@@ -1071,15 +1085,18 @@ section h2 {
     box-shadow: -5px -2px 30px 0px rgba(0,0,0,0.06);
     transition: all 0.3s cubic-bezier(0.76, 0, 0.29, 1);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .first-project img:nth-child(2) {
     transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project img:nth-child(3) {
     transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .first-project input:checked ~ .image-transform img {
@@ -1087,22 +1104,26 @@ section h2 {
     animation-delay: 0s;
     transition: all 0.7s cubic-bezier(0.76, 0, 0.29, 1);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .first-project input:checked ~ .image-transform img:first-child {
     right: -10%;
     transform: rotateZ(8deg) rotateX(0) rotateY(0deg) translateZ(201px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project input:checked ~ .image-transform img:nth-child(2) {
     right: 50%;
     transform: rotateZ(-7deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .first-project input:checked ~ .image-transform img:nth-child(3) {
     right: 22%;
     transform: rotateZ(2deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
 }
@@ -1135,6 +1156,7 @@ section h2 {
   transform-style: preserve-3d;
   transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .second-project .section-container {
@@ -1181,6 +1203,7 @@ section h2 {
   transform-style: preserve-3d;
   transform: rotateZ(9deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .second-project > input {
@@ -1201,6 +1224,7 @@ section h2 {
     top: 40%;
     transform: rotateZ(4deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }
 
@@ -1227,6 +1251,7 @@ section h2 {
     animation-fill-mode: forwards;
     animation-delay: 0s;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }
 
@@ -1270,6 +1295,7 @@ section h2 {
   padding-top: 20%;
   padding-bottom: 20%;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .technologies img {
   max-width: 60px;
@@ -1356,6 +1382,7 @@ section h2 {
   width: 32vh;
   transform: translate3d(-100%,-50%,0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -1401,11 +1428,13 @@ section h2 {
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .layer {
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .layer.layer-01 img {
   position: absolute;
@@ -1483,6 +1512,7 @@ section h2 {
   transition: all 0.3s ease-in-out;
   display: block;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 
