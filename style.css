@@ -1059,7 +1059,7 @@ section h2 {
   100% {box-shadow: 5px -2px 70px 0px rgba(0,0,0,0.4)}
 }
 
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .first-project .text-container {
     justify-content: center;
     padding-top: 0%;
@@ -1180,7 +1180,7 @@ section h2 {
 
 }
 
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .second-project .text-container p,
   .second-project .text-container h2 {
     max-width: 50%;
@@ -1237,7 +1237,7 @@ section h2 {
   100% {box-shadow: 5px -2px 70px 0px rgba(251, 206, 32, 0.4)}
 }
 
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .second-project img {
     max-width: 90vw;
     top: 50px;
@@ -1247,7 +1247,8 @@ section h2 {
     transition: all 3s ease-in-out;
     transform: rotateZ(5deg) rotateX(0deg) translateX(0px) translateZ(200px) translateY(0vh); 
   }
-@media screen and (min-device-width: 601px) and (max-device-height: 1024px) {
+}
+@media screen and (min-width: 601px) and (max-height: 1024px) {
   .second-project > input:checked ~ .image-transform img,
   .second-project img:hover {
     transition-duration: 3s;
@@ -1258,7 +1259,7 @@ section h2 {
     backface-visibility: hidden;
   }
 }
-@media screen and (min-device-height: 1024px) {
+@media screen and (min-height: 1024px) {
   /*ipad*/
   
   .second-project > input:not(:checked) ~ .image-transform img,
@@ -1335,7 +1336,7 @@ section h2 {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .technologies {
     padding: 0;
   }
@@ -1367,7 +1368,7 @@ section h2 {
     background-size: 320px auto;
   }
 }
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .show-mobile {
     display: none;
   }
@@ -1415,7 +1416,7 @@ section h2 {
   }
 }
 
-@media screen and (min-device-width: 601px) {
+@media screen and (min-width: 601px) {
   .fourth-project .text-container {
     width: 90%;
   }
