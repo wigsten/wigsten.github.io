@@ -881,7 +881,7 @@ section h2 {
 
 .dark-gray-shard {
   position: absolute;
-  top: -10vh;
+  top: -5vh;
   width: calc(100% + 40px);
   transform: rotate(-2deg) translate3d(0,0,0);
   outline: 1px solid transparent;
@@ -966,12 +966,8 @@ section h2 {
   align-items: center;
   align-self: center;
   z-index: 100;
-  -webkit-transform: translate3d(0,0,0);
   background: white;
-  transform-style: preserve-3d;
   padding-top: 0%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
   
@@ -989,7 +985,7 @@ section h2 {
   width: 100vw;
   position: absolute;
   -webkit-transform: translate3d(0,0,0);
-  transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateZ(200px);
+  transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translate3d(0,0,0);
   perspective-origin: bottom;
   backface-visibility: hidden;
   outline: 1px solid transparent;
@@ -999,6 +995,7 @@ section h2 {
   animation-delay: 1500s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
@@ -1007,20 +1004,21 @@ section h2 {
     box-shadow: -3px -2px 12px 0px rgba(0,0,0,0.09)
   }
   .first-project img:nth-child(1) {
-    transform: rotateZ(11deg) rotateX(0deg) rotateY(0deg) translateZ(210px);
+    transform: rotateZ(11deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     top: 64%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    z-index: 2;
   }
   .first-project img:nth-child(2) {
-    transform: rotateZ(6deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(6deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     top: 65%;
     animation: pulsatingShadowBlack 2s infinite;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .first-project img:nth-child(3) {
-    transform: rotateZ(-2deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
+    transform: rotateZ(-2deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     top: 66%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1029,7 +1027,7 @@ section h2 {
   .first-project:focus img {
     width: 120vw;
     animation: none;
-    transform: rotateZ(13deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
+    transform: rotateZ(13deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     right: -36%;
     top: 20%;
     box-shadow: -7px -5px 20px 0px rgba(0,0,0,0.09);
@@ -1038,7 +1036,7 @@ section h2 {
   }
   .first-project:hover img:nth-child(2),
   .first-project:focus img:nth-child(2) {
-    transform: rotateZ(7deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(7deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     right: -29%;
     top: 9%;
     -webkit-backface-visibility: hidden;
@@ -1046,7 +1044,7 @@ section h2 {
   }
   .first-project:hover img:nth-child(3),
   .first-project:focus img:nth-child(3) {
-    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     right: -16%;
     top: 18%;
     -webkit-backface-visibility: hidden;
@@ -1061,7 +1059,7 @@ section h2 {
   100% {box-shadow: 5px -2px 70px 0px rgba(0,0,0,0.4)}
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .first-project .text-container {
     justify-content: center;
     padding-top: 0%;
@@ -1078,7 +1076,8 @@ section h2 {
   }
   .first-project img {
     max-width: 90vw;
-    transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translateZ(200px);
+    min-width: 70vh;
+    transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translate3d(0,0,0);
     top: -1vh;
     right: calc(50% + 90px);
     width: 52vw;
@@ -1087,14 +1086,17 @@ section h2 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-
+    
+  .first-project img:nth-child(1) {
+    z-index: 7;
+  }
   .first-project img:nth-child(2) {
-    transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .first-project img:nth-child(3) {
-    transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translateZ(201px);
+    transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -1109,19 +1111,19 @@ section h2 {
 
   .first-project input:checked ~ .image-transform img:first-child {
     right: -10%;
-    transform: rotateZ(8deg) rotateX(0) rotateY(0deg) translateZ(201px);
+    transform: rotateZ(8deg) rotateX(0) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .first-project input:checked ~ .image-transform img:nth-child(2) {
     right: 50%;
-    transform: rotateZ(-7deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(-7deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .first-project input:checked ~ .image-transform img:nth-child(3) {
     right: 22%;
-    transform: rotateZ(2deg) rotateX(0deg) rotateY(0deg) translateZ(200px);
+    transform: rotateZ(2deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -1157,11 +1159,12 @@ section h2 {
   transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  min-height: 0;
 }
 
 .second-project .section-container {
   background-image: radial-gradient(70% 150%, #323131 50%, #343434 100%);
-  height: 90vh;
+  min-height: 80vh;
   width: 100vw;
 }
 
@@ -1177,7 +1180,7 @@ section h2 {
 
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .second-project .text-container p,
   .second-project .text-container h2 {
     max-width: 50%;
@@ -1234,32 +1237,42 @@ section h2 {
   100% {box-shadow: 5px -2px 70px 0px rgba(251, 206, 32, 0.4)}
 }
 
-
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .second-project img {
     max-width: 90vw;
     top: 50px;
+    /*width: 70vw;*/
     width: 90vw;
     left: calc(50% - 5px);
     transition: all 3s ease-in-out;
-    transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px) translateY(0vh);
+    transform: rotateZ(5deg) rotateX(0deg) translateX(0px) translateZ(200px) translateY(0vh); 
   }
-  
+@media screen and (min-device-width: 601px) and (max-device-height: 1024px) {
   .second-project > input:checked ~ .image-transform img,
   .second-project img:hover {
-    transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(200px) translateY(-50vh); 
+    transition-duration: 3s;
+    transform: rotateZ(5deg) rotateX(0deg) translateX(0vh) translateZ(200px) translateY(-50vh);
     animation-fill-mode: forwards;
     animation-delay: 0s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-device-height: 1024px) {
+  /*ipad*/
+  
+  .second-project > input:not(:checked) ~ .image-transform img,
   .second-project img {
-    width: 70vw;
+    transition-duration: 0.5s;
+  }
+  .second-project > input:checked ~ .image-transform img,
+  .second-project img:hover {
+    transition-duration: 0.5s;
+    transform: rotateZ(-5deg) rotateX(0deg) translateX(-20vh) translateZ(0px) translateY(0vh); 
   }
 }
+
+
   
 
 @keyframes animateSecondImage {
@@ -1322,7 +1335,7 @@ section h2 {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .technologies {
     padding: 0;
   }
@@ -1354,7 +1367,7 @@ section h2 {
     background-size: 320px auto;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .show-mobile {
     display: none;
   }
@@ -1402,7 +1415,7 @@ section h2 {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-device-width: 601px) {
   .fourth-project .text-container {
     width: 90%;
   }
