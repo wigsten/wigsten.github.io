@@ -10,56 +10,139 @@
 </head>
 <body>
 
+
+
+<input name="check-01" type="checkbox" id="header">
+<header class="">
+	<ul>
+		<li>
+			<a target="_blank" href="mailto:robin.wigsten@gmail.com"><img src="img/top-icon-email.png">
+			<p>Email me</p>
+			</a>
+		</li>
+		<li>
+			<a target="_blank" href="assets/cv-wigsten.pdf"><img src="img/top-icon-cv.png">
+			<p>Download my CV</p></a>
+		</li>
+	</ul>
+</header>
+
+<label class="header-action" for="header">
+	<img src="img/icon-mail.png" alt="">
+</label>
+
+
 <div class="image-wrapper">
 
 <section loading class="intro">
 	<div class="section-container">
-		<input type="radio" id="more-info">
+		<input name="check-02" type="radio" id="more-info">
 		<div class="text-container">
 			<h1>
 				Hi, Im Robin <em>&amp;</em> <br>
 				I'm that ridiculously friendly UI developer <br> that you keep hearing about.
 			</h1>
-			<div class="sticky-contact">
+			<!-- <div class="sticky-contact">
 				<a href="mailto:robin.wigsten@gmail.com">
-					<img src="images/icon-mail.png" alt="">
+					<img src="img/icon-mail.png" alt="">
 				</a>
-			</div>
+			</div> -->
 		</div>
-		<p class="detail wow fadeInUp" data-wow-offset="200">
+		<p class="detail wow fadeInUp" data-wow-offset="50">
 			<a href="#first-project">
 				To the selected works!<br>
-				<img src="images/icon-arrow-pointer.png" alt="">
+				<img src="img/icon-arrow-pointer.png" alt="">
 			</a>
 		</p>
 	</div>
 
 	<div class="shard-gray"></div>
-
 </section>
 
 
 <section class="first-project" id="first-project">
-	<input type="checkbox" id="show-centres">
 
-	<div class="image-transform">
-		<label for="show-centres">
+	<input name="check-03" type="checkbox" id="show-centres">
+
+	<div class="top-content-container">
+
+		<div class="image-transform">
 			<img src="images/screen-eastland-desktop-01.png" alt="">
 			<img src="images/screen-gc-desktop-01.png" alt="">
 			<img src="images/screen-robina-desktop-01.png" alt="">
-		</label>
+		</div>
+
+		<div class="section-container">
+			<div class="text-container">
+				<h2>QIC Shopping centres</h2>
+				<p>
+					I lead the Front-End Development, to help shape the online &amp; offline experience, of all the QIC shopping centres.
+				</p>
+				<p class="section-cta">
+					<a href="#show-more-qic">
+					<label for="show-centres">
+						<span>Expand</span>
+						<em></em>
+					</label>
+					</a>
+				</p>
+				<p class="visit">
+					Visit: 
+					<a target="_blank" href="https://www.eastland.com.au" data-title="Eastland | ">
+						<span>Eastland | </span>
+					</a>
+					<a target="_blank" href="https://www.robinatowncentre.com.au" data-title="Robina Towncenter | ">
+						<span>Robina Towncenter | </span>
+					</a>
+					<a target="_blank" href="https://www.grandcentralshopping.com.au" data-title="Grand Central">
+						<span>Grand Central</span>
+					</a>
+				</p>
+			</div>
+		</div>
 	</div>
-	<div class="section-container">
-		<div class="text-container">
-			<h2>QIC Shopping centres</h2>
-			<p>
-				I lead the Front-End Development, to help shape the online &amp; offline experience, of all the QIC shopping centres.
-			</p>
-			<label for="show-centres" class="section-cta">
-				Expand
-			</label>
+
+	<div class="panel-show-more" id="show-more-qic">
+
+		<h2>QIC Shopping Centres</h2>
+		<ul class="columns">
+			<li>
+				<img src="img/icon-responsive.png" alt="">
+				<h3>Mobile first, fully responsive platform</h3>
+			</li>
+			<li>
+				<img src="img/icon-award.png" alt="">
+				<h3>Multi-award winning &amp; innovative sitecore platform</h3>
+			</li>
+			<li>
+				<img src="img/icon-themes.png" alt="">
+				<h3>Advanced multi-site base extendible for themes</h3>
+			</li>
+		</ul>
+
+		<h3 class="mini-title">Selected highlights</h3>
+
+		<div class="selection clearfix">
+			<p>One single advanced gulp setup that builds from a single base into several themed sites, all served locally.</p>
+			<p>Completely automatic project base setup with automated and continuous delivery to cloud build server.</p>
+			<p>Advanced usage of nested Angular components to simplify CMS integration and for improved user experience.</p>
+			<p>Advanced JSON data-manipulation through dependency injection and promises.</p>
+		</div>
+
+		
+
+		<div class="selected-frameworks">
+			<h3>Made with <img src="img/icon-heart-red.png" alt="" class="love"> with these frameworks &amp; technologies</h3>
+			<img src="img/icon-angularjs.png" alt="">
+			<img src="img/icon-babel.png" alt="">
+			<img src="img/icon-gulp.png" alt="">
+			<img src="img/icon-npm.png" alt="">
+			<img src="img/icon-yarn.png" alt="">
+		</div>
+
+		<div class="links">
+			<h2>Have a look for yourself</h2>
 			<p class="visit">
-				Visit: 
 				<a target="_blank" href="https://www.eastland.com.au" data-title="Eastland | ">
 					<span>Eastland | </span>
 				</a>
@@ -71,72 +154,160 @@
 				</a>
 			</p>
 		</div>
+
+	</div>
+</section>
+
+
+<section class="speaking half">
+	<div class="dark-green-shard"></div>
+
+	<div class="section-container">
+		<div class="text-container">
+			<h6>Keynote</h6>
+			<h2>Come &amp; see me speak next time @sydCSS</h2>
+			<div class="calendar-container">
+				<img src="img/icon-calendar.png">
+				<p>
+					<span>6<sup>th</sup> of April</span><br>
+					<em id="countdown">(00 days left)</em>
+				</p>
+			</div>
+		</div>
 	</div>
 
 </section>
-
 
 
 <section class="second-project">
 	<div class="dark-gray-shard"></div>
 
-	<input type="checkbox" id="second-project-image">
+	<input name="check-04" type="checkbox" id="second-project-image" />
 
-	<div class="image-transform">
-		<label for="second-project-image">
+
+	<div class="top-content-container">
+		<div class="image-transform">
 			<img src="images/screen-gyg-desktop-01.png">
-		</label>
-	</div>
+		</div>
 
-	<div class="section-container">
-		<div class="text-container">
-			<h2>GYG!</h2>
-			<p>
-				I worked on creating the online experience for Guzman &amp; Guzman, the delicious mexican food chain. Both the brand and ordering site.
-			</p>
-			<p class="section-cta">
-				<label for="second-project-image">
-					See more
-				</label>
-			</p>
-			<p class="visit">
-				Visit: 
-				<a target="_blank" href="https://www.guzmanygomez.com/" data-title="Guzman y Gomez | ">
-					<span>Guzman y Gomez | </span>
-				</a>
-				<a target="_blank" href="https://order.guzmanygomez.com/#/stores" data-title="GYG Ordering">
-					<span>GYG Ordering</span>
-				</a>
-			</p>
+		<div class="section-container">
+			<div class="text-container">
+				<h2>Guzman!</h2>
+				<p>
+					I worked on creating the online experience for Guzman &amp; Guzman, the delicious mexican food chain. Both the brand and ordering site.
+				</p>
+				<p class="section-cta">
+					<a href="#show-more-gyg">
+						<label for="second-project-image">
+							<span>See more</span>
+							<em></em>
+						</label>
+					</a>
+				</p>
+				<p class="visit">
+					Visit: 
+					<a target="_blank" href="https://www.guzmanygomez.com/" data-title="Guzman y Gomez | ">
+						<span>Guzman y Gomez | </span>
+					</a>
+					<a target="_blank" href="https://order.guzmanygomez.com/#/stores" data-title="GYG Ordering">
+						<span>GYG Ordering</span>
+					</a>
+				</p>
+			</div>
 		</div>
 	</div>
-	<!-- <img src="images/burrito.png"> -->
+	<div class="shard-gyg"></div>
+
+	<div class="panel-show-more" id="show-more-gyg">
+		<div class="animation-protector">
+
+			<img src="img/icon-burrito.png" class="icon burrito _wow _fadeInUp" data-wow-offset="150">
+			<img src="img/icon-taco.png" class="icon taco _wow _fadeInRight" data-wow-offset="150">
+			<img src="img/icon-bowl.png" class="icon bowl _wow _fadeInLeft" data-wow-offset="150">
+
+
+			<h2>Guzman Y Gomez</h2>
+			<ul class="columns">
+				<li>
+					<img src="img/icon-resizing.png" alt="">
+					<h3>Advanced CSS background image scrolling and placement</h3>
+				</li>
+				<li>
+					<img src="img/icon-drop-cap.png" alt="">
+					<h3>Advanced CSS3 selectors and manipulation like columns, &amp; drop caps</h3>
+				</li>
+			</ul>
+
+			
+
+			<div class="selected-frameworks">
+
+				<h3>Created with <img src="img/icon-heart-yellow.png" alt="" class="love"> from some selected technologies &amp; frameworks</h3>
+				<img src="img/icon-angularjs.png" alt="">
+				<img src="img/icon-gulp.png" alt="">
+				<img src="img/icon-modernizr.png" alt="">
+				<img src="img/icon-sass.png" alt="">
+			</div>
+
+			<h3 class="mini-title">Selected highlights</h3>
+
+			<div class="selection clearfix">
+				<p>
+					Entire platform built as re-usable components; self-containing markup &amp; CSS.
+				</p>
+				<p>
+					Advanced CSS selectors avoiding any JavaScript overhead.
+				</p>
+				<p>
+					Nested multi-tab views with accompanying switching background.
+				</p>
+			</div>
+
+
+
+			<div class="links">
+				<h2>See for yourself</h2>
+				<p class="visit">
+					Visit: 
+					<a target="_blank" href="https://www.guzmanygomez.com/" data-title="Guzman y Gomez | ">
+						<span>Guzman y Gomez | </span>
+					</a>
+					<a target="_blank" href="https://order.guzmanygomez.com/#/stores" data-title="GYG Ordering">
+						<span>GYG Ordering</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
 </section>
 
 
+
 <section class="technologies half">
+	<div class="shard-white"></div>
 	<div class="section-container">
 		<div class="text-container">
 			<h2>Technologies &amp; frameworks that helps keep me busy daily</h2>
 		</div>
 		<ul>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0s" data-wow-duration="0.4s">
-				<img src="images/icon-adobe.png" alt="">
+				<img src="img/icon-adobe.png" alt="">
 			</li>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.15s" data-wow-duration="0.4s">
-				<img src="images/icon-angular.png" alt="">
+				<img src="img/icon-angular.png" alt="">
 			</li>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.3s" data-wow-duration="0.4s">
-				<img src="images/icon-git.png" alt="">
+				<img src="img/icon-git.png" alt="">
 			</li>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.45s" data-wow-duration="0.4s">
-				<img src="images/icon-gulp.png" alt="">
+				<img src="img/icon-gulp.png" alt="">
 			</li>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.6s" data-wow-duration="0.4s">
-				<img src="images/icon-sass.png" alt="">
+				<img src="img/icon-sass.png" alt="">
 			</li>
 			<li class="wow fadeInUp" data-wow-offset="200" data-wow-delay="0.75s" data-wow-duration="0.4s">
-				<img src="images/icon-sketch.png" alt="">
+				<img src="img/icon-sketch.png" alt="">
 			</li>
 		</ul>
 	</div>
@@ -144,7 +315,7 @@
 
 
 <section class="fourth-project" id="parallax-scene-village">
-	<input type="checkbox" id="village-gallery">
+	<input name="check-05" type="checkbox" id="village-gallery">
 	<label for="village-gallery" class="phone-shell">
 		<div class="mask">
 			<img src="images/screen-village-mobile-00.png">
@@ -157,9 +328,9 @@
 			<p>
 				I helped to rebuild the online cinema system for Village Cinemas &mdash; mobile screen size.
 			</p>
-			<p class="section-cta">
+			<p class="section-cta show-desktop">
 				 <label for="village-gallery">
-				 	<span class="show-desktop">Experience more</span>
+				 	<span>Experience more</span>
 				 </label>
 			</p>
 			<p class="visit">
@@ -217,39 +388,9 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.stellar.js"></script>
 <script src="js/wow.min.js"></script>
-
-<script type="text/javascript">
-
-	new WOW().init();
-
-	$(window).on('load', function(){
-		$.stellar();
-	});
-
-	$(function() {
-	  $('a[href*="#"]:not([href="#"])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html, body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
+<script src="js/scripts.js"></script>
 
 
-	$('label').click(function(e) {
-	    e.preventDefault();
-	    var For = $(this).attr('for');
-	    $('#' + For).trigger('click');
-	});
-
-
-</script>
 
 </body>
 </html>
