@@ -16,8 +16,6 @@
  *    IE on Windows Phone and in iOS.
  */
 
-/* Document
-   ========================================================================== */
 
 html {
   font-family: sans-serif; /* 1 */
@@ -25,13 +23,6 @@ html {
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
 
 body {
   margin: 0;
@@ -50,10 +41,6 @@ section {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 
 h1 {
   font-size: 3rem;
@@ -69,32 +56,17 @@ h1 {
   }
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
 figcaption,
 figure,
-main { /* 1 */
+main { 
   display: block;
 }
 
-/**
- * Add the correct margin in IE 8.
- */
 
 figure {
   margin: 1em 40px;
 }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -102,43 +74,23 @@ hr {
   overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
 
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
 
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
 
 a:active,
 a:hover {
   outline-width: 0;
 }
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -146,28 +98,17 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
 
 b,
 strong {
   font-weight: inherit;
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
 b,
 strong {
   font-weight: bolder;
 }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
 code,
 kbd,
@@ -176,35 +117,22 @@ samp {
   font-size: 1em; /* 2 */
 }
 
-/**
- * Add the correct font style in Android 4.3-.
- */
 
 dfn {
   font-style: italic;
 }
 
-/**
- * Add the correct background and color in IE 9-.
- */
 
 mark {
   background-color: #ff0;
   color: #000;
 }
 
-/**
- * Add the correct font size in all browsers.
- */
 
 small {
   font-size: 80%;
 }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
 
 sub,
 sup {
@@ -222,50 +150,24 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
 audio,
 video {
   display: inline-block;
 }
-
-/**
- * Add the correct display in iOS 4-7.
- */
 
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
 
 img {
   border-style: none;
 }
 
-/**
- * Hide the overflow in IE.
- */
-
 svg:not(:root) {
   overflow: hidden;
 }
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
 
 button,
 input,
@@ -278,20 +180,12 @@ textarea {
   margin: 0; /* 2 */
 }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
 
 button,
 input { /* 1 */
   overflow: visible;
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
 
 button,
 select { /* 1 */
@@ -304,22 +198,12 @@ input {
   -webkit-appearance: none;
 }
 
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
 button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
 }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -329,9 +213,6 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
@@ -340,22 +221,12 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
 
 legend {
   box-sizing: border-box; /* 1 */
@@ -366,28 +237,15 @@ legend {
   white-space: normal; /* 1 */
 }
 
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
 
 progress {
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
 }
 
-/**
- * Remove the default vertical scrollbar in IE.
- */
-
 textarea {
   overflow: auto;
 }
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
 
 [type="checkbox"],
 [type="radio"] {
@@ -395,79 +253,45 @@ textarea {
   padding: 0; /* 2 */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
+
 
 [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
 
 details, /* 1 */
 menu {
   display: block;
 }
 
-/*
- * Add the correct display in all browsers.
- */
 
 summary {
   display: list-item;
 }
 
-/* Scripting
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
 
 canvas {
   display: inline-block;
 }
 
-/**
- * Add the correct display in IE.
- */
 
 template {
   display: none;
@@ -485,15 +309,7 @@ template {
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
-/* close commented backslash hack */
 
-
-/* Hidden
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10-.
- */
 
 [hidden] {
   display: none;
@@ -501,9 +317,6 @@ template {
 
 /** NEW styles **/
 
-.image-transform{
-  /*display: none;*/
-}
 
 .panel-show-more {
   text-align: center;
@@ -512,8 +325,6 @@ template {
   width: 100%;
   max-height: 0px;
   overflow: hidden;
-  /*-webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);*/
   transition: max-height 0.7s ease-in-out;
   position: relative;
   z-index: 99;
@@ -533,7 +344,7 @@ section > input:checked ~ .panel-show-more {
 }
 section.first-project > input:checked ~ .panel-show-more {
   background: white;
-  }
+}
 
 .columns {
   margin: 50px auto 100px;
@@ -555,7 +366,6 @@ section.first-project > input:checked ~ .panel-show-more {
 }
 .second-project .columns {
   max-width: 600px;
-  /*border-bottom: 1px solid white;*/
 }
 .second-project .columns li {
   max-width: 900px;
@@ -624,7 +434,6 @@ h3.mini-title {
 
 @media screen and (min-width: 601px) {
   .second-project .selection {
-    /*width: 61%;*/
     display: flex;
   }
 }
@@ -639,8 +448,6 @@ h3.mini-title {
   padding: 0 30px;
 }
 
-
-
 .second-project .selection p:not(:last-child):after {
   content: '';
   background: url(img/icon-squiggly.png);
@@ -654,10 +461,9 @@ h3.mini-title {
   position: absolute;
   right: -10px;
   top: 50%;
-    position: relative;
-    display: block;
-    margin: 20px auto;
-  
+  position: relative;
+  display: block;
+  margin: 20px auto;
 }
 
 @media screen and (min-width: 601px) {
@@ -688,8 +494,6 @@ h3.mini-title {
   color: white;
 }
 .second-project .selected-frameworks {
-  /*background: rgba(253, 205, 75, 0.83);*/
-  /*color: #1C1C1C;*/
   color: #483604;
   position: relative;
   z-index: 2;
@@ -716,9 +520,7 @@ h3.mini-title {
   display: block;
   height: 50px;
 }
-.second-project .panel-show-more:before {
-  /*height: 50px;*/
-}
+
 .second-project .panel-show-more {
   background: #1C1C1C;
 } 
@@ -726,11 +528,13 @@ h3.mini-title {
 img.class {
   margin-bottom: 80px;
 }
+
 .selected-frameworks h3 {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .selected-frameworks h3 ~ img {
   margin-top: 25px;
   max-height: 35px;
@@ -806,7 +610,7 @@ img.class {
   background: #e49316;
 }
 .first-project .section-cta label:hover em:after {
-    border-top-color: #e49316;
+  border-top-color: #e49316;
 }
 
 
@@ -816,7 +620,6 @@ img.class {
 .second-project .section-cta em:after {
     border-top-color: #fbce20;
 }
-
 
 .second-project .section-cta label:hover em:before {
   background: white;
@@ -963,16 +766,12 @@ a {
   left: 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 .second-project .arrow-right:after {
   transform: rotate(-45deg);
   top: 13px;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
-
-
 
 
 .arrow-left {
@@ -1007,12 +806,10 @@ a {
   left: 0;
   transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 .fourth-project .arrow-left:after {
   transform: rotate(45deg);
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 
 
@@ -1211,21 +1008,6 @@ header a:hover:after {
   transform: translate3d(0,0%,0); 
   transition-duration: 0.25s;
 }
-/*.section-cta label:after {
-  content: '';
-  display: block;
-  width: 0%;
-  border-bottom: 1px solid #2d2d2d;
-  padding-top: 5px;
-  transition: all cubic-bezier(0.76, 0, 0.29, 1) 0.25s;
-}
-.section-cta label:hover {
-  cursor: pointer;
-}
-.section-cta label:hover:after {
-  width: 100%;
-  transition-duration: 0.45s;
-}*/
 
 h1,h2 {
   line-height: 1.4;
@@ -1271,7 +1053,6 @@ section h2 {
   position: absolute;
   bottom: calc(0px + 10vh);
   width: calc(100% + 40px);
-  /*transform: rotate(2deg) translate3d(0,0,0);*/
   transform: rotate(2deg);
   outline: 1px solid transparent;
   height: 20vh;
@@ -1288,7 +1069,6 @@ section h2 {
   position: absolute;
   top: -5vh;
   width: calc(100% + 40px);
-  /*transform: rotate(2deg) translate3d(0,0,0);*/
   transform: rotate(-1deg);
   outline: 1px solid transparent;
   height: 10vh;
@@ -1303,8 +1083,6 @@ section h2 {
   position: absolute;
   top: -10vh;
   width: calc(100% + 40px);
-  /*-webkit-transform: rotate(-2deg) translate3d(0,0,0) translateZ(0);
-  transform: rotate(-2deg) translate3d(0,0,0) translateZ(0);*/
   transform: rotate(-2deg);
   outline: 1px solid transparent;
   height: 20vh;
@@ -1313,15 +1091,11 @@ section h2 {
   z-index: -1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /*-webkit-transform-style: preserve-3d;*/
 }
 
 .shard-gyg {
-  /* position: absolute; */
   top: -10vh;
   width: calc(100% + 40px);
-  /*-webkit-transform: rotate(-2deg) translate3d(0,0,0) translateZ(0);
-  transform: rotate(-2deg) translate3d(0,0,0) translateZ(0);*/
   transform: rotate(2deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1416,7 +1190,6 @@ section h2 {
   background: white;
   padding-top: 0%;
   min-height: 0;
-  /*justify-content: center;*/
 }
 
 @media screen and (max-width: 600px) {
@@ -1440,27 +1213,21 @@ section h2 {
   left: -99999px;
 }
 
-
-
 .first-project .image-transform img:hover {
   z-index: 200;
 }
+
 .first-project .image-transform img {
-  
   transition: 0.4s top ease-in-out;
-  /*width: 100vw;*/
   position: absolute;
   -webkit-transform: translate3d(0,0,0);
   transform: rotateZ(-5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
   perspective-origin: bottom;
-  /*backface-visibility: hidden;*/
   outline: 1px solid transparent;
   right: -5%;
-  /*top: 54%;*/
   transform-style: preserve-3d;
   animation-delay: 1500s;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
   z-index: 2;
   bottom: 0;
 }
@@ -1482,45 +1249,18 @@ section h2 {
   .first-project .image-transform img:nth-child(1) {
     transform: rotateZ(-4deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     z-index: 72;
-    /*top: 0%;*/
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
   }
   .first-project .image-transform img:nth-child(2) {
     transform: rotateZ(5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     z-index: 60;
-    /*top: 0%;*/
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
   }
   .first-project .image-transform img:nth-child(3) {
     transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
-    /*top: 0%;*/
     box-shadow: -3px -2px 42px 0px rgba(0,0,0,0.19);
-    /*animation: pulsatingShadowBlack 2s infinite;*/
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
-  }
-
-  /*
-  .first-project .image-transform:hover .top-content-container img {
-    bottom: 5vh;
-  }
-  .first-project .image-transform:hover .top-content-container img:nth-child(1) {
-    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate3d(50px,60px,0);
-  }
-  .first-project .image-transform:hover .top-content-container img:nth-child(2) {
-    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate3d(20px,20px,0);
-  }
-  .first-project .image-transform:hover .top-content-container img:nth-child(3) {
-    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
-  }
-  */
-    
-    
-
-  
-
+  }  
 }
 
 @keyframes pulsatingShadowBlack {
@@ -1535,7 +1275,6 @@ section h2 {
   }
   .first-project .text-container {
     justify-content: center;
-    /*padding-top: 0%;*/
   }
   .first-project .text-container {
     margin-left: 50%
@@ -1548,23 +1287,17 @@ section h2 {
     margin-bottom: 150px;
   }
   .first-project .image-transform img {
-    /*max-width: 90vw;
-    min-width: 70vh;*/
     transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translate3d(0,0,0);
-    /*//top: -1vh;*/
     bottom: 0;
     height: 105vh;
     right: calc(50% + 90px);
-    /*width: 52vw;*/
     box-shadow: -5px -2px 30px 0px rgba(0,0,0,0.06);
     transition: all 0.3s cubic-bezier(0.76, 0, 0.29, 1);
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
   }
   .first-project .image-transform img:focus,
   .first-project .image-transform img:hover {
     bottom: 10vh;
-    /*z-index: 9999;*/
   }
     
   .first-project .image-transform img:nth-child(1) {
@@ -1573,38 +1306,12 @@ section h2 {
   .first-project .image-transform img:nth-child(2) {
     transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
   }
   .first-project .image-transform img:nth-child(3) {
     transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
-    /*backface-visibility: hidden;*/
   }
 
-  /*
-  .first-project input:checked ~ .top-content-container .image-transform img {
-    animation-fill-mode: forwards;
-    animation-delay: 0s;
-    transition: all 0.7s cubic-bezier(0.76, 0, 0.29, 1);
-    -webkit-backface-visibility: hidden;
-  }
-
-  .first-project input:checked ~ .top-content-container .image-transform img:first-child {
-    right: -10%;
-    transform: rotateZ(8deg) rotateX(0) rotateY(0deg) translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-  }
-  .first-project input:checked ~ .top-content-container .image-transform img:nth-child(2) {
-    right: 50%;
-    transform: rotateZ(-7deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-  }
-  .first-project input:checked ~ .top-content-container .image-transform img:nth-child(3) {
-    right: 22%;
-    transform: rotateZ(2deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-  }
-  */
 
 }
 
@@ -1629,27 +1336,14 @@ section h2 {
 .second-project {
   position: relative;
   color: white;
-      z-index: 9999;
-    display: inline-block;
-    width: 100%;
-  /*transform: translateZ(0);
-  -webkit-transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
-  transform-style: preserve-3d;
-  transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
+  z-index: 9999;
+  display: inline-block;
+  width: 100%;
   min-height: 0;
 }
 
 .second-project .section-container {
-  /*background-image: radial-gradient(70% 150%, #323131 50%, #343434 100%);*/
   background: #302F2F;
-  /*-webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
-  transform: translate3d(0,0,0) rotateZ(0) translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
   min-height: 84vh;
   width: 100vw;
 }
@@ -1745,16 +1439,12 @@ section h2 {
   left: 10%;
   z-index: 99;
   bottom: 0vh;
-  /*backface-visibility: hidden;*/
   outline: 1px solid transparent;
-  /*transform-style: preserve-3d;*/
-  /*transform: rotateZ(9deg) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(0px);*/
   transform: rotate(9deg);
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
-    height: 85vh;
-    width: auto;
-    bottom: -30vh;
+  height: 85vh;
+  width: auto;
+  bottom: -30vh;
 }
 
 .top-content-container {
@@ -1766,26 +1456,14 @@ section h2 {
   left: -9999px;
 }
 @media screen and (max-width: 600px) {
-  .second-project .image-transform img {
-    /*transition: all 0.8s ease;*/
-    /*animation: pulsatingShadowYellow 2s infinite;*/
-    /*z-index: 0;*/
-  }
   .second-project > input:checked ~ .top-content-container img {
     z-index: 99;
     animation: none;
-    /*width: 70vh;*/
     left: 12%;
     height: 65vh;
     bottom: -10vh;
     width: auto;
-    /*top: 40%;*/
-    /*transform: rotateZ(4deg) rotateX(0deg) rotateY(0deg) translateY(0) translateZ(0px);*/
     transform: rotate(4deg);
-    /*-webkit-backface-visibility: hidden;*/
-    /*-webkit-transform-style: preserve-3d;*/
-    /*backface-visibility: hidden;*/
-    /*backface-visibility: hidden;*/
   }
 }
 
@@ -1797,17 +1475,11 @@ section h2 {
 
 @media screen and (min-width: 601px) {
   .second-project .image-transform img {
-    /*max-width: 90vw;*/
     bottom: -25vh;
-    /*top: -10vh;*/
-    /* width: 70vw; */
     height: 115vh;
     left: calc(50% + 50px);
     transition: all 0.3s ease-in-out;
     transform: rotate(5deg);
-  }
-  .second-project .image-transform img:hover {
-    /*top: -20vh;*/
   }
 }
 @media screen and (min-width: 601px) {
@@ -1815,15 +1487,6 @@ section h2 {
   .second-project .image-transform img:hover {
     bottom: -20vh;
   }
-  /*.second-project > input:checked ~ .top-content-container img,
-  .second-project .image-transform img:hover {
-    transition-duration: 3s;
-    transform: rotateZ(5deg) rotateX(0deg) translateX(0vh) translateZ(0px) translateY(-50vh);
-    animation-fill-mode: forwards;
-    animation-delay: 0s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }*/
 }
 @media screen and (min-height: 1024px) {
   /*ipad*/
@@ -1832,9 +1495,7 @@ section h2 {
   .second-project .image-transform img {
     transition-duration: 0.5s;
   }
-  .second-project > input:checked ~ .top-content-container img
-  /*.second-project .image-transform img:hover*/ {
-    transition-duration: 0.5s;
+  .second-project > input:checked ~ .top-content-container img {
     bottom: -15vh;
     transform: rotate(-10deg) rotateX(0deg) translateX(-40vh) translateZ(0px) translateY(0vh); 
   }
@@ -1900,14 +1561,10 @@ header ul:before {
   top: 26px;
   right: 20px;
   transform: rotate(0deg);
-  /*//transform: rotate(-45deg);*/
   background: black;
   transition: all 0.12s ease-in-out;
   transition-delay: 0.4s;
   z-index: 9999;
-}
-header ul:after {
-  /*//transform: rotate(45deg); */
 }
 
 header ul {
@@ -2018,7 +1675,6 @@ input:checked ~ header ul:after {
 .dark-green-shard {
   display: block;
   width: calc(100% + 40px);
-  /*transform: rotate(1deg) translate3d(0,0,0);*/
   transform: rotate(1deg);
   outline: 1px solid transparent;
   height: 20vh;
@@ -2026,11 +1682,8 @@ input:checked ~ header ul:after {
   left: -20px;
   position: absolute;
   z-index: -1;
-  /*-webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
   background: #385659;
   top: -5vh;
-  /*left: 0;*/
   z-index: 101;
 
 }
@@ -2081,11 +1734,9 @@ input:checked ~ header ul:after {
   background: white;
   z-index: 99900;
   transform: translateZ(0);
-  /*backface-visibility: hidden;*/
   padding-top: 40px;
   padding-bottom: 20px;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 .technologies img {
   max-width: 60px;
@@ -2172,7 +1823,6 @@ input:checked ~ header ul:after {
   width: 32vh;
   transform: translate3d(-100%,-50%,0);
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 
 @media screen and (max-width: 600px) {
@@ -2183,12 +1833,9 @@ input:checked ~ header ul:after {
     left: 30%;
     width: 150px;
   }
-  .fourth-project > input:checked ~ label.phone-shell
-  /*.fourth-project .phone-shell:hover,
-  .fourth-project .phone-shell:focus*/ {
+  .fourth-project > input:checked ~ label.phone-shell{
     left: 50%;
     z-index: 22;
-    /*transform-origin: 0 0;*/
     transform: translate3d(-50%,-50%,0) scale(1.5,1.5);
   }
 }
@@ -2197,13 +1844,10 @@ input:checked ~ header ul:after {
   .fourth-project .text-container {
     width: 90%;
   }
-  .fourth-project > input:checked ~ label.phone-shell
-  /*.fourth-project .phone-shell:hover,
-  .fourth-project .phone-shell:focus*/ {
+  .fourth-project > input:checked ~ label.phone-shell{
     left: calc(50% - 34px);
     z-index: 99;
     transition-duration: 0.4s;
-    /*transform-origin: 0 0;*/
     transform: translate3d(-50%,-50%,0) scale(1.2,1.2);
   }
 }
@@ -2223,16 +1867,12 @@ input:checked ~ header ul:after {
   position: absolute;
   filter: blur(0.75px);
   height: 100px;
-  /*backface-visibility: hidden;*/
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 .layer {
-  /*backface-visibility: hidden;*/
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 .layer.layer-01 img {
   position: absolute;
@@ -2310,7 +1950,6 @@ input:checked ~ header ul:after {
   transition: all 0.3s ease-in-out;
   display: block;
   -webkit-backface-visibility: hidden;
-  /*backface-visibility: hidden;*/
 }
 
 
@@ -2321,13 +1960,10 @@ input:checked ~ header ul:after {
 
 
 .fourth-project > input:checked ~ .section-container,
-.fourth-project > input:checked ~ .parallax-items
-/*.fourth-project .phone-shell:hover ~ .section-container,
-.fourth-project .phone-shell:hover ~ .parallax-items*/ {
+.fourth-project > input:checked ~ .parallax-items {
   filter: blur(5px);
 }
 
-/*.fourth-project .phone-shell:hover img,*/
 .fourth-project > input:checked ~ label.phone-shell img {
   transition-delay: 0.8s;
   top: -162%;
