@@ -1375,7 +1375,8 @@ section h2 {
 @media screen and (min-width: 601px) {
   .second-project .bowl {
     top: 51%;
-    left: 37%;
+    left: auto;
+    right: 10%;
   }
 }
 
