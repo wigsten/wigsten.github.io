@@ -47,6 +47,22 @@ h1 {
   margin: 0.67em 0;
 }
 
+.availability p {
+  font-size: 1.8rem;
+}
+.availability {
+  background: #333;
+  text-align: center;
+}
+
+.availability .wrapper {
+  max-width: 700px;
+  text-align: center;
+  color: #e2e2e2;
+  padding: 5px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2.4rem;
@@ -351,8 +367,12 @@ section.first-project > input:checked ~ .panel-show-more {
 }
 @media screen and (min-width: 601px) {
   .columns {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;  
-    justify-content: center;
+    -webkit-justify-content: center;  
+        -ms-flex-pack: center;  
+            justify-content: center;
   }
   .columns h3 {
     width: 90%;
@@ -393,7 +413,9 @@ section.first-project > input:checked ~ .panel-show-more {
   line-height: 180px;
   max-height: 70px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .selection {
@@ -426,7 +448,11 @@ h3.mini-title {
   
 .second-project .selection {
 
-  align-items: center;
+  -webkit-align-items: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
   width: 95%;
   margin-bottom: 80px;
   max-width: 800px;
@@ -434,6 +460,8 @@ h3.mini-title {
 
 @media screen and (min-width: 601px) {
   .second-project .selection {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -594,14 +622,22 @@ img.class {
 
 .section-cta label:hover em,
 .section-cta label:hover em {
-  animation: animateFromTop 0.8s 1 ease-in-out;
+  -webkit-animation: animateFromTop 0.8s 1 ease-in-out;
+          animation: animateFromTop 0.8s 1 ease-in-out;
+}
+
+@-webkit-keyframes animateFromTop {
+  0% {-webkit-transform: translateY(0vh);transform: translateY(0vh)}
+  50% {-webkit-transform: translateY(5vh);transform: translateY(5vh)}
+  51% {-webkit-transform: translateY(-5vh);transform: translateY(-5vh)}
+  100% {-webkit-transform: translateY(0vh);transform: translateY(0vh)}
 }
 
 @keyframes animateFromTop {
-  0% {transform: translateY(0vh)}
-  50% {transform: translateY(5vh)}
-  51% {transform: translateY(-5vh)}
-  100% {transform: translateY(0vh)}
+  0% {-webkit-transform: translateY(0vh);transform: translateY(0vh)}
+  50% {-webkit-transform: translateY(5vh);transform: translateY(5vh)}
+  51% {-webkit-transform: translateY(-5vh);transform: translateY(-5vh)}
+  100% {-webkit-transform: translateY(0vh);transform: translateY(0vh)}
 }
 
 
@@ -739,14 +775,22 @@ a {
 
 .detail img {
   margin-top: 20px;
-  animation: arrowLoop 3s infinite ease-in-out;
+  -webkit-animation: arrowLoop 3s infinite ease-in-out;
+          animation: arrowLoop 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrowLoop {
+  0% {-webkit-transform: translateY(-200%);transform: translateY(-200%)}
+  10% {-webkit-transform: translateY(0%);transform: translateY(0%)}
+  90% {-webkit-transform: translateY(0%);transform: translateY(0%)}
+  100% {-webkit-transform: translateY(200%);transform: translateY(200%)}
 }
 
 @keyframes arrowLoop {
-  0% {transform: translateY(-200%)}
-  10% {transform: translateY(0%)}
-  90% {transform: translateY(0%)}
-  100% {transform: translateY(200%)}
+  0% {-webkit-transform: translateY(-200%);transform: translateY(-200%)}
+  10% {-webkit-transform: translateY(0%);transform: translateY(0%)}
+  90% {-webkit-transform: translateY(0%);transform: translateY(0%)}
+  100% {-webkit-transform: translateY(200%);transform: translateY(200%)}
 }
 
 .fourth-project .visit a:after {
@@ -760,15 +804,21 @@ a {
   width: 10px;
   height: 2px;
   background: #fbce20;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
 }
 .second-project .arrow-right:after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 13px;
   -webkit-backface-visibility: hidden;
 }
@@ -800,15 +850,21 @@ a {
   width: 10px;
   height: 2px;
   background: #ACABFF;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
   -webkit-backface-visibility: hidden;
 }
 .fourth-project .arrow-left:after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-backface-visibility: hidden;
 }
 
@@ -996,7 +1052,8 @@ header a:hover:after {
   top: 0;
   position: absolute;
   transition: all 0.25s ease-in-out;
-  transform: translate3d(-100%,0%,0);
+  -webkit-transform: translate3d(-100%,0%,0);
+          transform: translate3d(-100%,0%,0);
 }
 .first-project .section-cta label {
   border: 1px solid black;
@@ -1005,7 +1062,8 @@ header a:hover:after {
   color: black;
 }
 .section-cta label:hover:after {
-  transform: translate3d(0,0%,0); 
+  -webkit-transform: translate3d(0,0%,0);
+          transform: translate3d(0,0%,0); 
   transition-duration: 0.25s;
 }
 
@@ -1053,7 +1111,9 @@ section h2 {
   position: absolute;
   bottom: calc(0px + 10vh);
   width: calc(100% + 40px);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
   outline: 1px solid transparent;
   height: 20vh;
   background: #e8e8e8;
@@ -1069,7 +1129,9 @@ section h2 {
   position: absolute;
   top: -5vh;
   width: calc(100% + 40px);
-  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
   outline: 1px solid transparent;
   height: 10vh;
   background: white;
@@ -1083,7 +1145,9 @@ section h2 {
   position: absolute;
   top: -10vh;
   width: calc(100% + 40px);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
   outline: 1px solid transparent;
   height: 20vh;
   background: #302F2F;
@@ -1096,7 +1160,9 @@ section h2 {
 .shard-gyg {
   top: -10vh;
   width: calc(100% + 40px);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   outline: 1px solid transparent;
@@ -1163,11 +1229,21 @@ section h2 {
   display: block;
   height: 70vh;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   z-index: 3;
 }
@@ -1182,10 +1258,18 @@ section h2 {
 .first-project .top-content-container {
   position: relative;
   min-height: 90vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   z-index: 100;
   background: white;
   padding-top: 0%;
@@ -1222,11 +1306,14 @@ section h2 {
   position: absolute;
   -webkit-transform: translate3d(0,0,0);
   transform: rotateZ(-5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
-  perspective-origin: bottom;
+  -webkit-perspective-origin: bottom;
+          perspective-origin: bottom;
   outline: 1px solid transparent;
   right: -5%;
-  transform-style: preserve-3d;
-  animation-delay: 1500s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation-delay: 1500s;
+          animation-delay: 1500s;
   -webkit-backface-visibility: hidden;
   z-index: 2;
   bottom: 0;
@@ -1247,20 +1334,29 @@ section h2 {
     height: 55vh;
   }
   .first-project .image-transform img:nth-child(1) {
-    transform: rotateZ(-4deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(-4deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(-4deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     z-index: 72;
     -webkit-backface-visibility: hidden;
   }
   .first-project .image-transform img:nth-child(2) {
-    transform: rotateZ(5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(5deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     z-index: 60;
     -webkit-backface-visibility: hidden;
   }
   .first-project .image-transform img:nth-child(3) {
-    transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     box-shadow: -3px -2px 42px 0px rgba(0,0,0,0.19);
     -webkit-backface-visibility: hidden;
   }  
+}
+
+@-webkit-keyframes pulsatingShadowBlack {
+  0% {box-shadow: 5px -2px 70px 0px rgba(0,0,0,0.6)}
+  50% {box-shadow: 5px -2px 120px 0px rgba(0,0,0,0.15)}
+  100% {box-shadow: 5px -2px 70px 0px rgba(0,0,0,0.6)}
 }
 
 @keyframes pulsatingShadowBlack {
@@ -1271,23 +1367,30 @@ section h2 {
 
 @media screen and (min-width: 601px) {
   .first-project .top-content-container {
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .first-project .text-container {
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .first-project .text-container {
     margin-left: 50%
   }
   .first-project {
     padding-top: 0;
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .first-project .section-container {
     margin-bottom: 150px;
   }
   .first-project .image-transform img {
-    transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(-2deg) rotateX(-10deg) rotateY(0deg) translate3d(0,0,0);
     bottom: 0;
     height: 105vh;
     right: calc(50% + 90px);
@@ -1304,26 +1407,46 @@ section h2 {
     z-index: 7;
   }
   .first-project .image-transform img:nth-child(2) {
-    transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(14deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
   }
   .first-project .image-transform img:nth-child(3) {
-    transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+    -webkit-transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
+            transform: rotateZ(3deg) rotateX(0deg) rotateY(0deg) translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
   }
 
 
 }
 
-@keyframes animateFirstImage {
+@-webkit-keyframes animateFirstImage {
   0% {
-    transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateY(0) translateZ(0px);
+    -webkit-transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateY(0) translateZ(0px);
+            transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateY(0) translateZ(0px);
   }
   10% {
-    transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-2vh) translateZ(0px);
+    -webkit-transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-2vh) translateZ(0px);
+            transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-2vh) translateZ(0px);
   }
   100% {
-    transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-20vh) translateZ(0px);
+    -webkit-transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-20vh) translateZ(0px);
+            transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-20vh) translateZ(0px);
+  }
+}
+
+@keyframes animateFirstImage {
+  0% {
+    -webkit-transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateY(0) translateZ(0px);
+            transform: rotateZ(-5deg) rotateX(-10deg) rotateY(-10deg) translateY(0) translateZ(0px);
+  }
+  10% {
+    -webkit-transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-2vh) translateZ(0px);
+            transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-2vh) translateZ(0px);
+  }
+  100% {
+    -webkit-transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-20vh) translateZ(0px);
+            transform: rotateZ(-2deg) rotateX(-5deg) rotateY(-5deg) translateY(-20vh) translateZ(0px);
   }
 }
 
@@ -1367,7 +1490,8 @@ section h2 {
 .second-project .bowl {
   top: 58%;
   left: 10%;
-  animation: moveTheBurrito 5s infinite ease-in-out;
+  -webkit-animation: moveTheBurrito 5s infinite ease-in-out;
+          animation: moveTheBurrito 5s infinite ease-in-out;
 }
 
 
@@ -1383,28 +1507,44 @@ section h2 {
 .second-project .burrito {
   top: 80%;
   left: 90%;
-  animation: moveTheBurrito 6s infinite ease-in-out;
+  -webkit-animation: moveTheBurrito 6s infinite ease-in-out;
+          animation: moveTheBurrito 6s infinite ease-in-out;
 }
 
 .second-project .taco {
   top: 90%;
   left: 10%;
-  animation: moveTheBurrito 7s infinite ease-in-out;
+  -webkit-animation: moveTheBurrito 7s infinite ease-in-out;
+          animation: moveTheBurrito 7s infinite ease-in-out;
+}
+
+@-webkit-keyframes moveTheBurrito {
+  0% {-webkit-transform: translate(0.5vh, 4vh);transform: translate(0.5vh, 4vh)}
+  50% {-webkit-transform: translate(-0.5vh, 0.2vh);transform: translate(-0.5vh, 0.2vh)}
+  100% {-webkit-transform: translate(0.5vh, 4vh);transform: translate(0.5vh, 4vh)}
 }
 
 @keyframes moveTheBurrito {
-  0% {transform: translate(0.5vh, 4vh)}
-  50% {transform: translate(-0.5vh, 0.2vh)}
-  100% {transform: translate(0.5vh, 4vh)}
+  0% {-webkit-transform: translate(0.5vh, 4vh);transform: translate(0.5vh, 4vh)}
+  50% {-webkit-transform: translate(-0.5vh, 0.2vh);transform: translate(-0.5vh, 0.2vh)}
+  100% {-webkit-transform: translate(0.5vh, 4vh);transform: translate(0.5vh, 4vh)}
 }
 
 
 
 .second-project .section-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   padding-top: 0%;
 
 }
@@ -1423,7 +1563,9 @@ section h2 {
     max-width: 50%;
   }
   .second-project .section-container {
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 0;
     margin-bottom: 10vh;
   }
@@ -1441,7 +1583,9 @@ section h2 {
   z-index: 99;
   bottom: 0vh;
   outline: 1px solid transparent;
-  transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+          transform: rotate(9deg);
   -webkit-backface-visibility: hidden;
   height: 85vh;
   width: auto;
@@ -1459,13 +1603,22 @@ section h2 {
 @media screen and (max-width: 600px) {
   .second-project > input:checked ~ .top-content-container img {
     z-index: 99;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
     left: 12%;
     height: 65vh;
     bottom: -10vh;
     width: auto;
-    transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
+}
+
+@-webkit-keyframes pulsatingShadowYellow {
+  0% {box-shadow: 5px -2px 70px 0px rgba(251, 206, 32, 0.7)}
+  50% {box-shadow: 5px -2px 120px 0px rgba(251, 206, 32, 0.15)}
+  100% {box-shadow: 5px -2px 70px 0px rgba(251, 206, 32, 0.7)}
 }
 
 @keyframes pulsatingShadowYellow {
@@ -1480,7 +1633,9 @@ section h2 {
     height: 115vh;
     left: calc(50% + 50px);
     transition: all 0.3s ease-in-out;
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
 }
 @media screen and (min-width: 601px) {
@@ -1498,7 +1653,26 @@ section h2 {
   }
   .second-project > input:checked ~ .top-content-container img {
     bottom: -15vh;
-    transform: rotate(-10deg) rotateX(0deg) translateX(-40vh) translateZ(0px) translateY(0vh); 
+    -webkit-transform: rotate(-10deg) rotateX(0deg) translateX(-40vh) translateZ(0px) translateY(0vh);
+            transform: rotate(-10deg) rotateX(0deg) translateX(-40vh) translateZ(0px) translateY(0vh); 
+  }
+}
+
+
+  
+
+@-webkit-keyframes animateSecondImage {
+  0% {
+    -webkit-transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(0px);
+            transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(0px);
+  }
+  10% {
+    -webkit-transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-2vh) translateZ(0px);
+            transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-2vh) translateZ(0px);
+  }
+  100% {
+    -webkit-transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-20vh) translateZ(0px);
+            transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-20vh) translateZ(0px);
   }
 }
 
@@ -1507,13 +1681,16 @@ section h2 {
 
 @keyframes animateSecondImage {
   0% {
-    transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(0px);
+    -webkit-transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(0px);
+            transform: rotateZ(5deg) rotateX(10deg) rotateY(10deg) translateY(0) translateZ(0px);
   }
   10% {
-    transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-2vh) translateZ(0px);
+    -webkit-transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-2vh) translateZ(0px);
+            transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-2vh) translateZ(0px);
   }
   100% {
-    transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-20vh) translateZ(0px);
+    -webkit-transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-20vh) translateZ(0px);
+            transform: rotateZ(2deg) rotateX(5deg) rotateY(5deg) translateY(-20vh) translateZ(0px);
   }
 }
 
@@ -1561,7 +1738,9 @@ header ul:before {
   position: absolute;
   top: 26px;
   right: 20px;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
   background: black;
   transition: all 0.12s ease-in-out;
   transition-delay: 0.4s;
@@ -1569,14 +1748,26 @@ header ul:before {
 }
 
 header ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  align-self: center;
-  align-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   text-align: center;
-  justify-content: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 50px 0;
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
   background: white;
   z-index: 40;
   position: relative;
@@ -1613,7 +1804,9 @@ input:checked ~ header {
 }
 
 input:checked ~ header ul {
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 input:checked ~ header + label {
@@ -1624,10 +1817,14 @@ input:checked ~ header + label {
 input:checked ~ header ul:after,
 input:checked ~ header ul:before {
   right: 20px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 input:checked ~ header ul:after {
-  transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); 
 }
 
 
@@ -1642,9 +1839,15 @@ input:checked ~ header ul:after {
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   z-index: 9999;
   padding-bottom: 20vh;
@@ -1676,7 +1879,9 @@ input:checked ~ header ul:after {
 .dark-green-shard {
   display: block;
   width: calc(100% + 40px);
-  transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+          transform: rotate(1deg);
   outline: 1px solid transparent;
   height: 20vh;
   background: #1C1C1C;
@@ -1726,15 +1931,26 @@ input:checked ~ header ul:after {
  * ================**/
 
 .technologies {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background: white;
   z-index: 99900;
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   padding-top: 40px;
   padding-bottom: 20px;
   -webkit-backface-visibility: hidden;
@@ -1781,9 +1997,15 @@ input:checked ~ header ul:after {
   color: white;
   position: relative;
   z-index: 400;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  align-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   background-image: url(images/popcorn-bg.png);
   background-repeat: no-repeat;
   background-position: bottom 14% right;
@@ -1822,7 +2044,8 @@ input:checked ~ header ul:after {
   left: calc(50% - 84px);
   top: 50%;
   width: 32vh;
-  transform: translate3d(-100%,-50%,0);
+  -webkit-transform: translate3d(-100%,-50%,0);
+          transform: translate3d(-100%,-50%,0);
   -webkit-backface-visibility: hidden;
 }
 
@@ -1837,7 +2060,8 @@ input:checked ~ header ul:after {
   .fourth-project > input:checked ~ label.phone-shell{
     left: 50%;
     z-index: 22;
-    transform: translate3d(-50%,-50%,0) scale(1.5,1.5);
+    -webkit-transform: translate3d(-50%,-50%,0) scale(1.5,1.5);
+            transform: translate3d(-50%,-50%,0) scale(1.5,1.5);
   }
 }
 
@@ -1849,7 +2073,8 @@ input:checked ~ header ul:after {
     left: calc(50% - 34px);
     z-index: 99;
     transition-duration: 0.4s;
-    transform: translate3d(-50%,-50%,0) scale(1.2,1.2);
+    -webkit-transform: translate3d(-50%,-50%,0) scale(1.2,1.2);
+            transform: translate3d(-50%,-50%,0) scale(1.2,1.2);
   }
 }
 
@@ -1866,13 +2091,16 @@ input:checked ~ header ul:after {
 
 .layer img {
   position: absolute;
-  filter: blur(0.75px);
+  -webkit-filter: blur(0.75px);
+          filter: blur(0.75px);
   height: 100px;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
 .layer {
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
 .layer.layer-01 img {
@@ -1947,7 +2175,9 @@ input:checked ~ header ul:after {
 }
 
 .fourth-project .phone-shell {
-  transform-origin: center center;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
   transition: all 0.3s ease-in-out;
   display: block;
   -webkit-backface-visibility: hidden;
@@ -1962,7 +2192,8 @@ input:checked ~ header ul:after {
 
 .fourth-project > input:checked ~ .section-container,
 .fourth-project > input:checked ~ .parallax-items {
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 .fourth-project > input:checked ~ label.phone-shell img {
@@ -2000,11 +2231,21 @@ input:checked ~ header ul:after {
  * CONTACT
  * ================**/
 .contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background: white;
   z-index: 500;
