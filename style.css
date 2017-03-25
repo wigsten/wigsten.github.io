@@ -49,6 +49,7 @@ h1 {
 
 .availability p {
   font-size: 1.8rem;
+  line-height: 1.3;
 }
 .availability {
   background: #333;
@@ -834,10 +835,10 @@ a {
 }
 
 .fourth-project .section-cta label {
-  color: #ACABFF;
+  color: #5088bf;
 }
 .fourth-project .section-cta label:hover:after {
-  color: #ACABFF;
+  color: #5088bf;
 }
 .fourth-project .section-cta label:after {
   background: white;
@@ -849,7 +850,7 @@ a {
   display: inline-block;
   width: 10px;
   height: 2px;
-  background: #ACABFF;
+  background: #5088bf;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -2249,4 +2250,24 @@ input:checked ~ header ul:after {
   text-align: center;
   background: white;
   z-index: 500;
+}
+
+
+
+
+/* ================
+ * CONTACT
+ * ================**/
+footer {
+  background: #333;
+  padding: 8px 10px;
+  text-align: center;
+}
+footer p {
+  color: #999;
+  font-size: 1.3rem;
+}
+footer img {
+  max-width: 30px;
+  height: auto;
 }
